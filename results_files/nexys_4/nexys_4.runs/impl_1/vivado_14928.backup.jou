@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sat Sep 19 14:56:42 2015
+# Process ID: 2968
+# Log file: C:/Users/Tianhe/Desktop/heat_files/results_files/nexys_4/nexys_4.runs/impl_1/cmcs_ro.vdi
+# Journal file: C:/Users/Tianhe/Desktop/heat_files/results_files/nexys_4/nexys_4.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source cmcs_ro.tcl -notrace

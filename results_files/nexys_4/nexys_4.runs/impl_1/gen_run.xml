@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1447719994">
+  <File Type="PWROPT-DCP" Name="cmcs_ro_pwropt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="PLACE-DCP" Name="cmcs_ro_placed.dcp"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="PWROPT-DRC" Name="cmcs_ro_drc_pwropted.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="cmcs_ro_timing_summary_routed.rpt"/>
+  <File Type="PA-TCL" Name="cmcs_ro.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DCP" Name="cmcs_ro_opt.dcp"/>
+  <File Type="OPT-DRC" Name="cmcs_ro_drc_opted.rpt"/>
+  <File Type="PLACE-IO" Name="cmcs_ro_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="cmcs_ro_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="cmcs_ro_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="cmcs_ro_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="cmcs_ro_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="cmcs_ro_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="cmcs_ro_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="cmcs_ro_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="cmcs_ro_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="cmcs_ro_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="cmcs_ro_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="cmcs_ro_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="cmcs_ro_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="cmcs_ro_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="cmcs_ro_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="cmcs_ro_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="cmcs_ro_route_status.pb"/>
+  <File Type="ROUTE-TIMING-PB" Name="cmcs_ro_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="cmcs_ro_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="cmcs_ro_incremental_reuse_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="cmcs_ro_postroute_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="cmcs_ro.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="cmcs_ro_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="cmcs_ro_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="cmcs_ro_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="cmcs_ro.bit"/>
+  <File Type="BG-BIN" Name="cmcs_ro.bin"/>
+  <File Type="BITSTR-MSK" Name="cmcs_ro.msk"/>
+  <File Type="BITSTR-RBT" Name="cmcs_ro.rbt"/>
+  <File Type="BITSTR-NKY" Name="cmcs_ro.nky"/>
+  <File Type="BITSTR-BMM" Name="cmcs_ro_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="cmcs_ro.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="cmcs_ro.sysdef"/>
+  <File Type="BG-BGN" Name="cmcs_ro.bgn"/>
+  <File Type="BG-DRC" Name="cmcs_ro.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../repo_src/sources_1/ascii_decode.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../repo_src/sources_1/ro_test.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../repo_src/sources_1/control_test.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../repo_src/sources_1/uart_tx.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../repo_src/sources_1/uart_rx.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../repo_src/sources_1/counter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../repo_src/sources_1/bram_sp.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../repo_src/9626_constrain_and_source_files/main9626.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../repo_src/sources_1/cmcs_ro.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="cmcs_ro"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../repo_src/constrs_1/cmcs_r1.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../repo_src/constrs_1/lock_pin.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="ScopedToRef" Val="ring_osc"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../repo_src/constrs_1/route.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="ScopedToRef" Val="ro_array"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../repo_src/constrs_1/route_with_the_other_slice.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="ScopedToRef" Val="ro_array"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../repo_src/9626_constrain_and_source_files/route_9626.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="ScopedToRef" Val="ro_array"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../repo_src/9626_constrain_and_source_files/route_with_the_other_slice9626.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="ScopedToRef" Val="ro_array"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../repo_src/constrs_1/cmcs_r1.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream" PreStepTclHook="C:/Users/Tianhe/Desktop/heat_files/results_files/loop_warn.tcl"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="xadc_wiz_0"/>
+</GenRun>

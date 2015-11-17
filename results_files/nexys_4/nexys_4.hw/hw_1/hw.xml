@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hwsession version="1" minor="1">
+  <device name="xc7a100t_0" gui_info=""/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7a100t_0" gui_info="">
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/debug_nets.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/cmcs_ro.bit"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="u_ila_0_0" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq14&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq14&apos;h0001"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq14&apos;h0001"/>
+      </probeOptions>
+      <nets>
+        <net name="addr[13]"/>
+        <net name="addr[12]"/>
+        <net name="addr[11]"/>
+        <net name="addr[10]"/>
+        <net name="addr[9]"/>
+        <net name="addr[8]"/>
+        <net name="addr[7]"/>
+        <net name="addr[6]"/>
+        <net name="addr[5]"/>
+        <net name="addr[4]"/>
+        <net name="addr[3]"/>
+        <net name="addr[2]"/>
+        <net name="addr[1]"/>
+        <net name="addr[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="cnt_out_xfer[15]"/>
+        <net name="cnt_out_xfer[14]"/>
+        <net name="cnt_out_xfer[13]"/>
+        <net name="cnt_out_xfer[12]"/>
+        <net name="cnt_out_xfer[11]"/>
+        <net name="cnt_out_xfer[10]"/>
+        <net name="cnt_out_xfer[9]"/>
+        <net name="cnt_out_xfer[8]"/>
+        <net name="cnt_out_xfer[7]"/>
+        <net name="cnt_out_xfer[6]"/>
+        <net name="cnt_out_xfer[5]"/>
+        <net name="cnt_out_xfer[4]"/>
+        <net name="cnt_out_xfer[3]"/>
+        <net name="cnt_out_xfer[2]"/>
+        <net name="cnt_out_xfer[1]"/>
+        <net name="cnt_out_xfer[0]"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>
