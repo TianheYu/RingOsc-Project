@@ -1,0 +1,22 @@
+set_property LOC RAMB36_X1Y0 [get_cells bram/BRAM_reg_0] 
+set_property LOC RAMB36_X1Y1 [get_cells bram/BRAM_reg_1] 
+set_property LOC RAMB36_X1Y2 [get_cells bram/BRAM_reg_2] 
+set_property LOC RAMB36_X1Y3 [get_cells bram/BRAM_reg_3] 
+set_property LOC RAMB36_X1Y4 [get_cells bram/BRAM_reg_4] 
+set_property LOC RAMB36_X1Y5 [get_cells bram/BRAM_reg_5] 
+set_property LOC RAMB36_X1Y6 [get_cells bram/BRAM_reg_6] 
+set_property LOC RAMB36_X1Y7 [get_cells bram/BRAM_reg_7] 
+set_property LOC RAMB36_X1Y8 [get_cells bram/BRAM_reg_8] 
+set_property LOC RAMB36_X0Y2 [get_cells bram/BRAM_reg_9] 
+set_property LOC RAMB36_X0Y3 [get_cells bram/BRAM_reg_10] 
+set_property LOC RAMB36_X0Y4 [get_cells bram/BRAM_reg_11] 
+set_property LOC RAMB36_X0Y5 [get_cells bram/BRAM_reg_12] 
+set_property LOC RAMB36_X0Y6 [get_cells bram/BRAM_reg_13] 
+set_property LOC RAMB36_X0Y7 [get_cells bram/BRAM_reg_14]
+set_property LOC RAMB36_X0Y8 [get_cells bram/BRAM_reg_15]
+
+set_property PROHIBIT TRUE [get_sites {SLICE_X*Y100 SLICE_X*Y99 SLICE_X*Y50 SLICE_X*Y49}]
+
+set_property PROHIBIT TRUE [get_sites {SLICE_X45Y* SLICE_X47Y* SLICE_X49Y* SLICE_X51Y* SLICE_X53Y* SLICE_X55Y* SLICE_X57Y* SLICE_X59Y* SLICE_X61Y* }]
+create_pblock ag1; add_cells_to_pblock [get_pblocks ag1] [get_cells cntrl_unt]
+resize_pblock [get_pblocks ag1] -add {SLICE_X12Y49:SLICE_X25Y17}
